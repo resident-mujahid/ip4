@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Pig Dice</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src='js/jquery-3.1.1.js'></script>
+    <script src='js/script.js'></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 well">
+          <div id="whoseTurn"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-5 well">
+
+          <h2><span id="player1name">Player 1</span> - Score: <span id="player1totalScore"></span></h2>
+          <div id="player1panel">
+            <div id="player1" class="dicePanel">
+              <div id="player1dice" class="dice"></div>
+            </div>
+            <div class="turn">
+              Turn Score: <span id="player1turnScore"></span>
+            </div>
+            
+          </div>
+        </div>
+
+        <div class="col-xs-5 col-xs-offset-2 well">
+          <h2><span id="player2name">Player 2</span> - Score: <span id="player2totalScore"></span></h2>
+          <div id="player2panel">
+            <div id="player2" class="dicePanel">
+              <div id="player2dice" class="dice"></div>
+            </div>
+            <div class="turn">
+              Turn Score: <span id="player2turnScore"></span>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="modalOverlay" class="overlay">
+      <div id="playerNames" class="well">
+        <form id="newGame">
+            <label for="player1">Player 1 Name:</label>
+            <input type="text" id="player1" placeholder="Player Name" required>
+            <br>
+            <label for="player1">Player 2 Name:</label>
+            <input type="text" id="player2" placeholder="Player Name" required>
+            <br><br>
+            <button type="submit">Play!</button>
+        <form>
+      </div>
+    </div>
+</body>
+</html>
